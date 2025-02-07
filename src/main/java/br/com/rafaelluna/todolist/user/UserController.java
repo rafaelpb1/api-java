@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 //Private
 //Protected
 
+//      Getters     and     Setters 
+//  Buscar valor    //      Inserir valor
+
 public class UserController {
     
     //String - texto
@@ -25,6 +28,6 @@ public class UserController {
     @PostMapping("/")
     
     public void create(@RequestBody UserModel userModel) {
-        System.out.println(userModel.name);
+        System.out.println(userModel.getUsername());
     }
 }
